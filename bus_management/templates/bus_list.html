@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bus List</title>
+</head>
+<body>
+    <h1>Buses</h1>
+    <ul>
+        {% for bus in buses %}
+            <li>{{ bus.0 }} - {{ bus.1 }} - {{ bus.2 }} seats - {{ bus.3 }}</li>  <!-- Adjust indices based on columns -->
+        {% empty %}
+            <li>No buses found.</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
